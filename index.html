@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css\my-page.css">
+  
+  <title>My-Personal-Page</title>
+</head>
+
+<body>
+
+  <!-- Title -->
+<section id="title" class="gradient-background">
+<h1> Welcome to my Personal Page</h1>
+<img class= "profile-img" src="images\me.jpg" alt="my-photo">
+
+<div class="intro">
+<P> Hello,here I present some of my work . As I enjoy programming, during my free time I developed 
+  several programs related to the <strong>Geomatics </strong>field as my first degree is in Geodesy Science
+  and Topography. When I was a student, I had to use a calculator HP41CV where I helped my self by writing codes which where useful for calculations.
+  As you know, a calculator is limited in a memory size and operation I jumped to a computer using Fortran language which is dedicated for enginering and science.
+  Discovering the nice user interface of other languages such as Visual studio made me tempted to use them.
+</P>
+</div>
+  </section>
+
+
+
+  <!-- My Prgrms Slider -->
+  <section id="my-prgm-slider">
+
+ <div class="slide-container"> 
+      <span id="slider-image-1"> </span>
+      <span id="slider-image-2"> </span>
+      <span id="slider-image-3"> </span>
+
+
+     <div class="image-container"> 
+        <img src="images\topo-tool_700-500.png" class="image-slider" alt=" Topo-Tool">
+        <img src="images\vrd_700-500.png" class="image-slider" alt=" VRD">
+        <img src="images\auscult_700-500.png" class="image-slider" alt=" Auscult">
+
+       </div>
+       <div class="button-container"> 
+           <a href="#slider-image-1" class="slider-button"> </a>
+           <a href="#slider-image-2" class="slider-button"> </a>
+           <a href="#slider-image-3" class="slider-button"> </a>
+         </div>
+
+
+ </div>  
+
+ </section>
+<!-- Prgrms description -->
+ <h4> Program Descriptions :</h4>
+ <section id="Pgrms-description">
+
+
+  <button class="accordion">Topo-Tool</button>
+  <div class="panel">
+    <p> <strong>Topo-Tool</strong> is a software for a topometric calculations which are necessary for a surveyor to process the data collected in a field by GPS or Total station measurements. It contains various 
+       modules, from a simple bearing and distance calculation or angle conversion to complex network adjustment using a least square adjustment method, displaying the standards deviations 
+       for the adjusted component. Also it includes the transformation between different projected systems. Moreover, it contains a module which can be very useful for a 'Tree survey' which 
+       can identify a double surveyed points as these cannot be seen easily on the drawing file. The simplicity of the data structure of the input file using a Notepad makes it user-friendly.
+       It supports different angle units, so no need to pre-process angles measurments.In addition. Examples are included to facilitate it use by following the input data format.
+       The previous version in French was published at <a href="https://www.topographie.net/logiciels/fiche.php?GID=26">Topo-Tool-V1</a>. This version can be downloaded via :
+        <a href="https://www.justgiving.com/page/mohamed-messadi-1675633306121?utm_source=copyLink&utm_medium=one_page&utm_content=page/mohamed-messadi-1675633306121&utm_campaign=pfp-share&utm_term=3a5fa33609c2439792faaf44121e4d96">Topo-Tool-V2</a> or via the 
+        link below.
+       
+    </p>
+  </div>
+  
+  <button class="accordion">VRD-Widget</button>
+  <div class="panel">
+    <p>The abbeviation VRD translates to English as 'Roads and Miscellaneous networks'. It can be used in the construction of access roads, the implementation of water supplies, electricity and telecommunications networks.
+      <strong> VRD-Widget</strong> is a tool for a calculation of  the volume of 'fill & cut' in road design. Based on a method using a trapezoidal integral rule. For the mesh network for water 
+      supply, the itteratif  " Hardy & Cross" method is used for its calculation, where example and explanation sheet are provided. For the waste water network, where a domestic waste water is 
+      neglected, the calculation takes only rain fall water into consideration. In addition 2 modules for a calculation of circular and trapezoidal pipeline are present.This program was published in French
+      at <a href="https://www.topographie.net/logiciels/fiche.php?GID=29">VRD-Widget</a> . Alternatively, it can be downloaded via the link below.
+
+    </p>
+  </div>
+  
+  <button class="accordion">Auscult</button>
+  <div class="panel">
+    <p> <strong> Auscult</strong>: is a program dedicated for dam stability check,in other words 'dam monitoring'. It is based on three components which are triangulation and levelling networks
+    adjustment and "Helmert's" transformation which a similarity plan ( translation, rotation and scale). This one is used to determine stable pilars which will be considered as fixed points
+    in a triangulation adjustment. In practice, we would consider a pilar as stable if it's displacement relatively to the initial measure is <= 3 mm for earth dam and <= 2 mm for concrete dam.
+    The calculation is based on an itteratif process where in each itteration the data file is replaced by eliminating the pilar showing the largest displacement. The networks adjustments are based
+    on the least square method where the sum of the squared errors multiplied by the weight of the observations are minimised.
+
+    </p>
+  </div>
+ </section>
+  
+ <!-- Prgms Download -->
+   <section id="prgms-download">
+    <h4> Download Buttons</h4>
+    <div class="d-flex gap-5 justify-content-center py-4">
+
+       <a href="Prgms\Topo-Tool-Installer.exe" > <button  class="btn btn-primary rounded-pill px-5" type="button" >  Topo-Tool  </button></a>
+       <a href="Prgms\setup_VRD-Widget.exe" > <button class="btn btn-secondary rounded-pill px-5" type="button">VRD-Widget</button></a> 
+       <a href="Prgms\auscult-setup.exe" > <button class="btn btn-success rounded-pill px-5" type="button">Auscult</button></a> 
+      
+    </div>
+   <p>Prior to running these programs, Microsoft Frame work needs to be installed in your machine.Otherwise it can be downloaded from Microsoft official website. Same thing for Microsoft Power Pack.
+    Please note, downloading an executable file is usually flagged up by the anti-virus or web browser's one.However these programs are garanteed free of virus therefore it is safe to download them if you wish. </p>
+   </section>
+ 
+ 
+   <!-- Prgm Fortran -->
+   <section id="prgms-ftn">
+    <h4> Some Programs in Fortran</h4>
+    <div class="vie">
+    <a   href="Prgms\my-ftn-prgrms.pdf" target="_blank" > View some FTN programs</a>
+    <br>
+  </div>
+   </section>
+
+    <!-- Prgm HP41 CV -->
+    <section id="hp41cv">
+      <h4> HP41Cv Calculator</h4>
+      <div class="hp41">
+        
+
+       <p>The HP-41 scientific & engineering calculator was produced from 1979 to 1990, for more than 10 years, 
+        brilliantly holding its own against the Basic programmable pocket computers that marked this era.
+        It had significantly more memory than its predecessor HP-67, a powerful proprietary programming language.
+         Also alphanumeric capabilities, enhanced by the 14-segment digit display, instantly recognisable, 
+         and four slots to accommodate additional modules.The HP-41 had its optional printer. 
+         It was also possible to obtain a magnetic card reader, or a barcode reader for quick entry of 
+         programs published in this form. The cherry on the cake: networking several machines and 
+         peripherals was possible, using the HP-IL peripheral, which was very expensive at the time.
+          A successful concept, a high-performance, scalable machine, a relatively affordable price, 
+          all well-made, at the right time.Here is a download link if you miss it 🤣 </p>
+         
+
+       </div>
+       <img src="images\hp41-cv.jpg" alt="hp41cv-calculator">
+       <div class="hp">
+       <a href="Prgms\V41R8 calcu.exe" download> HP41CV-Download</a>
+      </div>
+    </section>
+
+    <!-- Web site developped -->
+    <section id="my-site-cov">
+      <h4> Web site Development</h4>
+      <div class="mweb">
+      <a href="https://medval2020.github.io/html-portfolio/"target="_blank" >Corona Virus 2019 </a><br>
+      <a href="https://mmessadi-hotel.my.canva.site/" target="_blank" >My Hotel</a>
+      </div>
+    </section>
+
+
+
+    <!-- Drawings -->
+    <section id="ml-exmp">
+      <h4> Some Drawings</h4>
+      <div class="mweb">
+      <a href="Prgms\merged-plans.pdf"target="_blank" >View Some Drawings </a>
+    </div>
+    </section>
+
+    <!-- hobbies -->
+    <section id="hob">
+      <br>
+     <h5> What I like :</h5>
+     <div class="hobi"> 
+     <img src="https://i.gifer.com/DlMi.gif" alt="Walking man" >
+
+      <img src="https://i.gifer.com/4h47.gif" alt="Swimming man" >
+
+     <img src="https://i.gifer.com/UWyk.gif" alt="Gym man" >
+
+     <img src="https://i.gifer.com/7zon.gif" alt="Computer man" >
+
+     <img src="https://i.gifer.com/Fqny.gif" alt="Fish eating" >
+
+     <img src="https://i.gifer.com/TO6v.gif" alt="Hot sauce" >
+      </div>
+     </section>
+
+
+   <!-- Contact -->
+     <section id="contact-me">
+       <br>
+       <div class="gradient-background">
+       <div class="container"> 
+
+       <div class="cright"><h5>©M.Messadi</h5> </div>
+
+       <div class="contact"><h2> Contact</h2> <p> Mohamed Messadi</p>
+         <p> Email : mmde_alge@yahoo.fr</p>
+       <a href="https://www.linkedin.com/in/mohamed-messadi-83201480">LinkedIn</a>
+       </div>
+
+
+       </div>
+       </div>
+
+
+     </section>
+
+
+
+
+   <script>
+   var acc = document.getElementsByClassName("accordion");
+   var i;
+  
+   for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+ 
+</body>
+
+
+
+</html>
